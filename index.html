@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoGlow - Premium Auto Service & Detailing</title>
+    <meta name="description" content="AutoGlow offers top-notch auto service and detailing. Experience the difference with our expert care for your vehicle.">
+    <meta name="keywords" content="auto service, car detailing, vehicle maintenance, car wash, auto repair">
+    <meta name="author" content="AutoGlow">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header-container container">
+        <a href="#" class="logo">AutoGlow</a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="btn btn-primary" id="bookNowBtn">Book Now</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Auto Service & Detailing</h1>
+            <p>Experience the difference with AutoGlow's expert care for your vehicle</p>
+            <button class="btn btn-large" id="learnMoreBtn">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Choose AutoGlow</h2>
+            <p>At AutoGlow, we combine cutting-edge technology with expert craftsmanship to deliver unparalleled auto service and detailing.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-tools"></i>
+                    <h3>Expert Technicians</h3>
+                    <p>Our certified professionals ensure top-quality service</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-spray-can"></i>
+                    <h3>Premium Products</h3>
+                    <p>We use only the best products for your vehicle's care</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Timely Service</h3>
+                    <p>Quick turnaround without compromising on quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="images/img.png" alt="Auto Repair">
+                    <h3>Auto Repair</h3>
+                    <p>Comprehensive diagnostics and repairs for all makes and models</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/img4.png" alt="Detailing">
+                    <h3>Detailing</h3>
+                    <p>Thorough interior and exterior detailing for a showroom finish</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/img3.png" alt="Oil Change">
+                    <h3>Oil Change</h3>
+                    <p>Quick and efficient oil changes to keep your engine running smoothly</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/img2.png" alt="Tire Service">
+                    <h3>Tire Service</h3>
+                    <p>Tire rotation, balancing, and replacement services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="pricing">
+        <div class="container">
+            <h2>Our Packages</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Basic Wash</h3>
+                    <ul>
+                        <li>Exterior Wash</li>
+                        <li>Tire Cleaning</li>
+                        <li>Window Cleaning</li>
+                        <li>Trunk cleaning</li>
+                    </ul>
+                    <button class="btn">Select Package</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Deluxe Detail</h3>
+                    <ul>
+                        <li>Full Exterior Detailing</li>
+                        <li>Interior Vacuuming & Cleaning</li>
+                        <li>Wax & Polish</li>
+                        <li>Tire Shine</li>
+                    </ul>
+                    <button class="btn">Select Package</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium Service</h3>
+                    <ul>
+                        <li>Full Deluxe Detail Package</li>
+                        <li>Engine Bay Cleaning</li>
+                        <li>Paint Correction</li>
+                        <li>Ceramic Coating</li>
+                    </ul>
+                    <button class="btn">Select Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Book Your Service</h2>
+            <form id="serviceForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="basic-wash">Basic Wash</option>
+                        <option value="deluxe-detail">Deluxe Detail</option>
+                        <option value="premium-service">Premium Service</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit" class="btn btn-large">Book Now</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container container">
+        <div class="footer-section">
+            <h3 class="footer-logo">AutoGlow</h3>
+            <p>Your trusted partner for premium auto care and detailing services.</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>123 Auto Street, Car City, ST 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@autoglow.com</p>
+        </div>
+        <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Stay updated with our latest offers and news!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 AutoGlow. All rights reserved.</p>
+        <div class="footer-legal">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-service.html">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
