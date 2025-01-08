@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3498db;
+    --primary-color: #000000;
     --secondary-color: #2ecc71;
     --text-color: #333;
     --bg-color: #f7f7f7;
@@ -140,7 +140,7 @@ a {
 
 .feature i {
     font-size: 48px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
