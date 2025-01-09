@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoGlow - Premium Auto Service & Detailing</title>
-    <meta name="description" content="AutoGlow offers top-notch auto service and detailing. Experience the difference with our expert care for your vehicle.">
+    <meta name="description"
+          content="AutoGlow offers top-notch auto service and detailing. Experience the difference with our expert care for your vehicle.">
     <meta name="keywords" content="auto service, car detailing, vehicle maintenance, car wash, auto repair">
     <meta name="author" content="AutoGlow">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/adaptive.css">
-    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+    <link rel="icon" type="image/png" href="images/car.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -22,6 +29,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#packages">Packages</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -40,7 +49,8 @@
     <section id="about" class="about">
         <div class="container">
             <h2>Why Choose AutoGlow</h2>
-            <p>At AutoGlow, we combine cutting-edge technology with expert craftsmanship to deliver unparalleled auto service and detailing.</p>
+            <p>At AutoGlow, we combine cutting-edge technology with expert craftsmanship to deliver unparalleled auto
+                service and detailing.</p>
             <div class="features">
                 <div class="feature">
                     <i class="fas fa-tools"></i>
@@ -95,37 +105,120 @@
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <h3>Basic Wash</h3>
+                    <p class="price">$29.99</p>
                     <ul>
                         <li>Exterior Wash</li>
                         <li>Tire Cleaning</li>
                         <li>Window Cleaning</li>
                         <li>Trunk cleaning</li>
                     </ul>
-                    <button class="btn">Select Package</button>
+                    <a href="#contact" class="btn">Select Package</a>
                 </div>
                 <div class="pricing-card">
                     <h3>Deluxe Detail</h3>
+                    <p class="price">$99.99</p>
                     <ul>
                         <li>Full Exterior Detailing</li>
                         <li>Interior Vacuuming & Cleaning</li>
                         <li>Wax & Polish</li>
                         <li>Tire Shine</li>
                     </ul>
-                    <button class="btn">Select Package</button>
+                    <a href="#contact" class="btn">Select Package</a>
                 </div>
                 <div class="pricing-card">
                     <h3>Premium Service</h3>
+                    <p class="price">$149.99</p>
                     <ul>
                         <li>Full Deluxe Detail Package</li>
                         <li>Engine Bay Cleaning</li>
                         <li>Paint Correction</li>
                         <li>Ceramic Coating</li>
                     </ul>
-                    <button class="btn">Select Package</button>
+                    <a href="#contact" class="btn">Select Package</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="gallery-title">Our Projects</h2>
+            <div class="slider">
+                <div class="swiper gallery-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery-item">
+                                <img src="images/img5.png" alt="Before and After 1">
+                                <div class="gallery-overlay">
+                                    <h3>Paint protection</h3>
+                                    <p>Protect your vehicle's finish with advanced coating solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-item">
+                                <img src="images/img6.png" alt="Before and After 2">
+                                <div class="gallery-overlay">
+                                    <h3>Headlight glass care</h3>
+                                    <p>Enhance visibility and style with polished crystal clear glass headlights</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-item">
+                                <img src="images/img7.png" alt="Before and After 3">
+                                <div class="gallery-overlay">
+                                    <h3>Cleanliness Inside</h3>
+                                    <p>Deep and thorough cleaning that removes stains, odors, and dirt, leaving your car’s interior fresh and spotless.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-item">
+                                <img src="images/img8.png" alt="Before and After 4">
+                                <div class="gallery-overlay">
+                                    <h3>Interior perfection</h3>
+                                    <p>Deep cleaning and restoration for a fresh, like new interior</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            </div>
+    </section>
+
+
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"AutoGlow transformed my car! It looks better than when I first bought it. Highly
+                        recommended!"</p>
+                    <h4>John D.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Professional service, attention to detail, and friendly staff. I won't trust my car to anyone
+                        else."</p>
+                    <h4>Sarah M.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The ceramic coating package is worth every penny. My car still looks amazing after months!"</p>
+                    <h4>Mike R.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"I've been to many auto detailing services, but AutoGlow is by far the best. They truly care
+                        about your car."</p>
+                    <h4>Emily L.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section id="contact" class="contact">
         <div class="container">
@@ -154,12 +247,17 @@
                 </div>
                 <div class="form-group">
                     <label for="date">Preferred Date:</label>
-                    <input type="date" id="date" name="date" required>
+                    <input type="text" id="date" name="date" required placeholder="Select a date">
                 </div>
                 <button type="submit" class="btn btn-large">Book Now</button>
             </form>
         </div>
     </section>
+
+    <section id="map" class="map">
+        <div id="mapid"></div>
+    </section>
+
 </main>
 
 <footer class="footer">
@@ -180,6 +278,8 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Our Services</a></li>
                 <li><a href="#packages">Packages</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -207,5 +307,14 @@
     </div>
 </footer>
 
+<div id="cookie-banner" class="cookie-banner">
+    <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
+        <a href="privacy-policy.html">Learn more</a>
+    </p>
+    <button id="accept-cookies" class="btn btn-cookie">Accept</button>
+</div>
+
+
 </body>
 </html>
+

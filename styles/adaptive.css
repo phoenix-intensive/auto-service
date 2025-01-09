@@ -1,3 +1,18 @@
+@media (max-width: 1024px) {
+    .swiper-button-next::after {
+        position: absolute;
+        right: -40px; /* Вынесено за пределы карусели */
+        color: black;
+    }
+
+    .swiper-button-prev::after {
+        position: absolute;
+        left: -40px; /* Вынесено за пределы карусели */
+        color: black;
+    }
+
+}
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -23,6 +38,19 @@
     .footer-section {
         flex-basis: 100%;
     }
+
+    .swiper-button-next::after {
+        position: absolute;
+        right: -40px; /* Вынесено за пределы карусели */
+        color: black;
+    }
+
+    .swiper-button-prev::after {
+        position: absolute;
+        left: -40px; /* Вынесено за пределы карусели */
+        color: black;
+    }
+
 }
 
 @media (max-width: 480px) {
