@@ -54,6 +54,10 @@
 }
 
 @media (max-width: 480px) {
+    .nav-list {
+        display: none;
+    }
+
     .hero h1 {
         font-size: 36px;
     }
