@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
         breakpoints: {
             768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 30,
             },
             1024: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 40,
             },
         },
